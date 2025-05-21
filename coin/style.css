@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
+.header {
+  background: #eaeaea;
+  padding: 24px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 48px;
+}
+.header nav {
+  display: flex;
+  gap: 48px;
+}
+.header nav a {
+  color: #888;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0 8px;
+}
+.header nav a.active {
+  color: #222;
+  border-bottom: 2px solid #222;
+}
+.header .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 48px;
+}
+.header .profile .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.header .profile .name {
+  font-size: 1rem;
+  color: #555;
+}
+.header .profile .coins {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.main {
+  display: flex;
+  gap: 32px;
+  margin: 32px 48px 0 48px;
+}
+.upgrades {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.upgrade {
+  background: #fff;
+  border: 2px solid #2222;
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #0001;
+  transition: border 0.2s;
+}
+.upgrade.selected {
+  border: 2px solid #222;
+}
+.upgrade.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.upgrade-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.upgrade-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.upgrade-title .upgrade-img {
+  margin-right: 8px;
+  font-size: 1.3em;
+  vertical-align: middle;
+}
+.upgrade-desc {
+  color: #888;
+  font-size: 0.95rem;
+}
+.upgrade-cost {
+  color: #444;
+  font-size: 1rem;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.upgrade button {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.upgrade button:disabled {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+.stats {
+  display: flex;
+  gap: 0;
+  margin-bottom: 32px;
+}
+.stat {
+  background: #44454a;
+  color: #fff;
+  border-radius: 12px 0 0 12px;
+  padding: 24px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  font-size: 1.2rem;
+  gap: 8px;
+}
+.stat + .stat {
+  border-radius: 0;
+  border-left: 2px solid #555;
+}
+.stat:last-child {
+  border-radius: 0 12px 12px 0;
+}
+.stat .stat-label {
+  color: #bbb;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.clicker-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-top: 16px;
+}
+.clicker-btn {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #888;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: background 0.1s, box-shadow 0.1s;
+  box-shadow: 0 4px 24px #0001;
+  user-select: none;
+}
+.clicker-btn:active {
+  background: #ccc;
+  box-shadow: 0 2px 8px #0002;
+}
+.footer {
+  background: #666870;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  margin-top: 64px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 24px;
+  font-weight: 500;
+}
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  color: #888;
+  font-size: 2rem;
+  cursor: pointer;
+} 
